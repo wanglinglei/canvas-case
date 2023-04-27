@@ -7,7 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <canvas id="canvas" width="800" height="600"></canvas>
-    <script src="./scripts/clock.js"></script>
+    <!--   时钟
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./scripts/clock.js"></script>
+    -->
+    <div id="ggk">
+        <div class="jp" id="jp"></div>
+        <canvas id="canvas" class="ggk-canvas" width="400" height="100"></canvas>
+    </div>
+    <script src="./scripts/scratchCard.js"></script>
 </body>
+<style>
+    #ggk{
+        position:relative;
+        width: 400px;
+        height: 100px;
+    }
+    .jp {
+        position:absolute;
+        top:0;
+        left:0;
+        width: 400px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 50px;
+        color:brown
+    }
+    .ggk-canvas{
+        position:absolute;
+        top:0;
+        left: 0;
+        width: 400px;
+        height: 100px;
+    }
+</style>
 </html>
